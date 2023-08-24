@@ -1,0 +1,7 @@
+{
+  "name": "SchoolProyect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
