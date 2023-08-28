@@ -4,13 +4,13 @@
 
 export const environment = {
   firebase: {
-    projectId: 'app-movil-education',
-    appId: '1:459734992953:web:f8d4334a6d37de5c7125e8',
-    storageBucket: 'app-movil-education.appspot.com',
-    apiKey: 'AIzaSyAht9VOosSP6K3ATisQ4R7czDHo-Pa4ohQ',
-    authDomain: 'app-movil-education.firebaseapp.com',
-    messagingSenderId: '459734992953',
-    measurementId: 'G-HKTZQLLWV1',
+    projectId: process.env['FIREBASE_PROJECT_ID'],
+    appId: process.env['FIREBASE_APP_ID'],
+    storageBucket: process.env['FIREBASE_STORAGE_BUCKET'],
+    apiKey: process.env['FIREBASE_API_KEY'],
+    authDomain: process.env['FIREBASE_AUTH_DOMAIN'],
+    messagingSenderId: process.env['FIREBASE_MESSAGING_SENDER_ID'],
+    measurementId: process.env['FIREBASE_MEASUREMENT_ID'],
   },
   production: false
 };
