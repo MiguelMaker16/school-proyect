@@ -71,3 +71,6 @@ Thumbs.db
 .firebase
 *-debug.log
 .runtimeconfig.json
+
+# Ignore the .env file
+.env
