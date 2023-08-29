@@ -71,3 +71,6 @@ Thumbs.db
 .firebase
 *-debug.log
 .runtimeconfig.json
+
+# Ignore the firebase-configuration-credentials
+firebase-config-credentials.ts
