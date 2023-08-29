@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'white-opacity-50': '#1e293b'
+        'white-opacity-50': '#1e293b',
+        'blue-dark': '#004AADFF',
+        'blue-more-dark': '#13139F',
       }
     },
   },

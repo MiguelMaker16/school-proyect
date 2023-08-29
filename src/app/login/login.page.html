@@ -1,17 +1,30 @@
 <ion-content>
-  <div class="flex flex-col justify-center items-center w-full h-full bg-sky-700 gap-4">
-    <h1 class="text-white font-bold text-2xl">Facebook</h1>
-    <ion-item class="rounded-full bg-red-800!important">
-      <ion-icon name="person-outline" slot="start"></ion-icon>
-      <ion-input placeholder="Usuario" [type]="'text'"></ion-input>
-    </ion-item>
-    <ion-item class="rounded-full">
-      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
-      <ion-input placeholder="Contraseña" [type]="showPassword ? 'text' : 'password'"></ion-input>
-      <ion-icon [name]="showPassword ? 'eye-outline' : 'eye-off-outline'" slot="end" (click)="togglePassword()"></ion-icon>
-  </ion-item>
-  <ion-button shape="round">Entrar</ion-button>
-  <a href="" class="text-white font-bold">Olvide Mi Contraseña</a>
-  <ion-button shape="round">¡Regístrate Ahora!</ion-button>
+  <div class="flex justify-center items-center w-full h-full bg-blue-dark">
+    <div class="flex flex-col gap-4">
+
+      <h1 class="w-full text-center text-white text-2xl font-bold">App Movil</h1>
+
+      <div class="relative">
+        <input type="text" placeholder="Correo Electronico" [(ngModel)]="email" class="pl-14 w-full h-10 border-none rounded-full bg-white bg-opacity-50 placeholder-white text-white font-bold shadow-lg">
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <ion-icon class="w-6 h-6 mx-3 text-white" name="mail-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="relative">
+        <input type="{{ showPassword ? 'text' : 'password' }}" placeholder="Contraseña" [(ngModel)]="password" class="pl-14 pr-14 w-full h-10 border-none rounded-full bg-white bg-opacity-50 placeholder-white text-white font-bold shadow-lg">
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <ion-icon class="w-6 h-6 mx-3 text-white" name="lock-closed-outline"></ion-icon>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center cursor-pointer" (click)="togglePassword()">
+          <ion-icon class="w-6 h-6 mx-3 text-white" [name]="showPassword ? 'eye-outline' : 'eye-off-outline'"></ion-icon>
+        </div>
+      </div>
+
+      <button class="w-full h-10 bg-white border-none rounded-full shadow-lg" (click)="loginOrRegister()">
+        <span class="text-blue-more-dark font-bold">Entrar</span>
+      </button>
+      
+    </div>
   </div>
 </ion-content>
